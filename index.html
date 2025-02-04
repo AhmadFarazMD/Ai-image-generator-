@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="highlight">AI</span> Image Generator</h1>
+            <p class="subtitle">Transform your ideas into stunning images</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-wrapper">
+                    <input type="text" id="promptInput" placeholder="Describe the image you want to generate...">
+                    <button id="generateBtn">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                        Generate
+                    </button>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <div class="loading-spinner" id="loading">
+                    <div class="spinner"></div>
+                    <p>Generating your masterpiece...</p>
+                </div>
+                <div class="image-container" id="imageContainer">
+                    <img id="generatedImage" alt="Generated Image" style="display: none;">
+                    <button id="downloadBtn" class="download-btn" style="display: none;">
+                        <i class="fas fa-download"></i>
+                        Download Image
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Developed  By <i class="fas fa-heart"></i> AHMAD_MD</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
